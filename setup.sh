@@ -15,6 +15,6 @@ apm install linter linter-eslint
 
 # Install npm dependencies
 echo "Installing npm dependencies..."
-sudo npm i -g eslint karma webpack
+sudo npm i -g eslint
 
 # MTFBWY.
