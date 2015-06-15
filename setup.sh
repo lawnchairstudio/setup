@@ -25,11 +25,11 @@ brew install\
 
 # If Ataom Editor is installed, then install Atom Editor packages
 echo "Installing Atom Editor packages..."
-apm install linter linter-eslint
+if test $(which apm)
+  then 
+  apm install linter linter-eslint
+  sudo npm i -g eslint
+fi
 
-# Install npm dependencies
-echo "Installing npm dependencies..."
-sudo npm i -g eslint
-
-exit 0
+exit 1
 # MTFBWY.
